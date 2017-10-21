@@ -1,14 +1,24 @@
-using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 namespace Codewars_WhichAreIn
 {
     [TestClass]
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Input_arpAnd_aaa_Should_Be_EmptyArray()
         {
+            var actual = Kata.inArray(new string[] {"arp"}, new string[] {"aaa"});
+            var expected = new string[] { };
+            Assert.AreEqual(expected,actual);
+        }
+
+    }
+
+    public class Kata
+    {
+        public static string[] inArray(string[] array1, string[] array2)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
