@@ -40,6 +40,14 @@ namespace Codewars_WhichAreIn
         }
 
         [TestMethod]
+        public void Input_ss_arp_And_art_starpoint_garp_Should_Be_arp()
+        {
+            var actual = Kata.inArray(new string[] { "ss", "arp" }, new string[] { "art", "starpoint","garp" });
+            var expected = new string[] { "arp" };
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void CodewarsExampleTest()
         {
             var actual = Kata.inArray(new string[] { "arp", "live", "strong" },
