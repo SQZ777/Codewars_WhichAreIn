@@ -9,7 +9,7 @@ namespace Codewars_WhichAreIn
         {
             var actual = Kata.inArray(new string[] {"arp"}, new string[] {"aaa"});
             var expected = new string[] { };
-            Assert.AreEqual(expected,actual);
+            CollectionAssert.AreEqual(expected,actual);
         }
 
     }
@@ -18,7 +18,7 @@ namespace Codewars_WhichAreIn
     {
         public static string[] inArray(string[] array1, string[] array2)
         {
-            throw new System.NotImplementedException();
+            return new string[]{};
         }
     }
 }
