@@ -53,11 +53,11 @@ namespace Codewars_WhichAreIn
         public static string[] inArray(string[] array1, string[] array2)
         {
             List<string> result = new List<string>();
-            foreach (var a2 in array2)
+            foreach (var a1 in array1)
             {
-                foreach (var a1 in array1)
-                {
-                    if (a2.Contains(a1))
+                foreach (var a2 in array2)
+                {   
+                    if (a2.Contains(a1)&& !result.Contains(a1))
                     {
                         result.Add(a1);
                     }
