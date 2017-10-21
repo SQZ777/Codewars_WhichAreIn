@@ -29,6 +29,14 @@ namespace Codewars_WhichAreIn
             var expected = new string[] {"arp"};
             CollectionAssert.AreEqual(expected,actual);
         }
+
+        [TestMethod]
+        public void Input_ss_arp_And_art_starpoint_Should_Be_arp()
+        {
+            var actual = Kata.inArray(new string[] {"ss", "arp"}, new string[] {"art", "starpoint"});
+            var expected =new string[]{"arp"};
+            CollectionAssert.AreEqual(expected,actual);
+        }
          
     }
 
