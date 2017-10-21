@@ -37,11 +37,14 @@ namespace Codewars_WhichAreIn
         public static string[] inArray(string[] array1, string[] array2)
         {
             List<string> result = new List<string>();
-            foreach (var s in array2)
-            { 
-                if (s.Equals(array1[0]) )
+            foreach (var a2 in array2)
+            {
+                foreach (var a1 in array1)
                 {
-                    result.Add(s);
+                    if (a2.Equals(a1))
+                    {
+                        result.Add(a2);
+                    }
                 }
             }
             return result.ToArray();
