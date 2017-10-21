@@ -41,9 +41,9 @@ namespace Codewars_WhichAreIn
             {
                 foreach (var a1 in array1)
                 {
-                    if (a2.Equals(a1))
+                    if (a2.Contains(a1))
                     {
-                        result.Add(a2);
+                        result.Add(a1);
                     }
                 }
             }
