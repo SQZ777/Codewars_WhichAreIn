@@ -37,7 +37,15 @@ namespace Codewars_WhichAreIn
             var expected =new string[]{"arp"};
             CollectionAssert.AreEqual(expected,actual);
         }
-         
+
+        [TestMethod]
+        public void CodewarsExampleTest()
+        {
+            var actual = Kata.inArray(new string[] {"arp", "live", "strong"},
+                new string[] {"lively", "alive", "harp", "sharp", "armstrong"});
+            var expected = new string[] { "arp", "live", "strong" };
+            CollectionAssert.AreEqual(expected,actual);
+        }
     }
 
     public class Kata
