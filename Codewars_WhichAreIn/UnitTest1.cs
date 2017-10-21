@@ -48,6 +48,14 @@ namespace Codewars_WhichAreIn
         }
 
         [TestMethod]
+        public void Input_bc_abc_And_bbbc_dsssaabcasd_Should_Be_arp()
+        {
+            var actual = Kata.inArray(new string[] { "bc","abc" }, new string[] { "bbbc","dsssaabcasd"});
+            var expected = new string[] { "abc","bc" };
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void CodewarsExampleTest()
         {
             var actual = Kata.inArray(new string[] { "arp", "live", "strong" },
